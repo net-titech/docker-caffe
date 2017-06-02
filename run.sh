@@ -9,4 +9,4 @@ nvidia-docker run -ti --rm \
     -v caffe_examples:/opt/caffe/examples \
     -v caffe_data:/opt/caffe/data \
     --network host \
-    caffe:jupyter bash
+    caffe-pruning:jupyter bash
