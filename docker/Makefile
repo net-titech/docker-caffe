@@ -7,8 +7,8 @@ all: jupyter
 .PHONY: gosu jupyter
 
 gosu: gosu/Dockerfile
-	$(DOCKER) build -t caffe:gosu gosu/
+	$(DOCKER) build -t caffe-pruning:gosu gosu/
 
 jupyter: jupyter/Dockerfile
-	$(DOCKER) build -t caffe:gosu gosu/
-	$(DOCKER) build -t caffe:jupyter jupyter/
+	$(DOCKER) build -t caffe-pruning:gosu gosu/
+	$(DOCKER) build -t caffe-pruning:jupyter jupyter/

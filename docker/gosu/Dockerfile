@@ -1,4 +1,4 @@
-FROM bvlc/caffe:gpu
+FROM caffe-pruning:gpu
 
 ENV GOSU_VERSION 1.10
 RUN set -x \
