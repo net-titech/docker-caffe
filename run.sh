@@ -6,7 +6,7 @@ nvidia-docker run -ti --rm \
     -v /home/$USER:/home/$USER/mnt \
     -v /mnt/data/:/mnt/data \
     -v caffe_models:/opt/caffe/models \
-    -v caffe_examples:/opt/caffe/examples \
+    -v caffe_examples_pruning:/opt/caffe/examples \
     -v caffe_data:/opt/caffe/data \
     --network host \
     caffe-pruning:jupyter bash
